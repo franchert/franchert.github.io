@@ -72,6 +72,35 @@
 				});
 			</script>
 		</div>
+		<div class="item">
+			<h2>Blue Ridge Relay - 9/5/14</h2>
+			<div class="slideshow2" data-transition="crossfade" data-loop="true" data-skip="false">
+				<ul class="carousel">
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="images/brr3.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="images/brr1.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="images/brr2.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="images/brr4.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="images/brr5.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="images/brr6.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="images/brr7.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="images/brr8.jpg"/></li>
+				</ul>
+			</div>
+		</div>
+							<script>
+				$(function() {
+					// Create slideshow instances
+					var $s = $('.slideshow2').slides();
+
+					// Access an instance API
+					var api = $s.eq(0).data('slides');
+
+					// Transition select
+					$('select[name=transition]').on('change', function() {
+						api.redraw( this.value );
+					});
+				});
+			</script>
 	</div>
     
     <script>
