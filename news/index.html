@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/foundation/js/vendor/modernizr.js"></script>
+    <script src="/foundation/js/foundation.min.js"></script>
+	<script type="text/javascript" src="/js/slideshow.js"></script>
+	<script type="text/javascript" src="/js/viewportSize.js"></script>
+	<script type="text/javascript" src="/js/news.js"></script>	
+	<script type="text/javascript" src="jscolor/jscolor.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Istok+Web:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+	<link rel="stylesheet" href="/foundation/css/foundation.css" />	
+	<link rel="stylesheet" type="text/css" href="/css/global.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/news.css"/>	
+	<title>Chris - News</title>
+  </head>
+<body>
+	<nav class="top-bar" id="top-bar" data-topbar>
+	  <ul class="title-area">
+		<li class="name">
+			<h1><a href="/">Chris Francart</a></h1>
+		</li>
+		<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+	  </ul>
+
+	  <section class="top-bar-section">
+		<ul class="right">
+			<li class=""><a href="/about">About</a></li>
+			<li class="active"><a href="/news">News</a></li>
+			<li class=""><a href="/styles">Styles</a></li>
+			<li class="has-dropdown not-click">
+				<a href="/sandbox">Sandbox</a>
+				<ul class="dropdown">
+					<li><a href="/sandbox/prism">Prism</a></li>
+					<li><a href="/sandbox/grid">Grid</a></li>
+				</ul>
+			</li>
+		</ul>
+	  </section>
+	</nav>
+    <div class="row">
+		<div class="item">
+			<h2>Spartan Race - 3/22/14</h2>
+			<div class="slideshow" data-transition="crossfade" data-loop="true" data-skip="false">
+				<ul class="carousel">
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="0.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="1.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="4.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="3.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="5.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="2.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="6.jpg"/></li>
+				</ul>
+			</div>
+			<script>
+				$(function() {
+					// Create slideshow instances
+					var $s = $('.slideshow').slides();
+
+					// Access an instance API
+					var api = $s.eq(0).data('slides');
+
+					// Transition select
+					$('select[name=transition]').on('change', function() {
+						api.redraw( this.value );
+					});
+				});
+			</script>
+		</div>
+	</div>
+    
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

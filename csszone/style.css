@@ -1,0 +1,29 @@
+.nav{
+	display:block;
+	position:fixed;
+	right:0;
+	height:100vh;
+	width:50px;
+	background:#ccc;
+	border-left:1px solid #fff;
+}	
+.nav ul li a{
+	display:block;
+	float:right;
+	height:50px;
+	width:100%;
+	border-bottom:1px solid #fff;
+	text-decoration:none;
+	text-align:center;
+	color:#fff;
+	line-height:50px;
+}
+.sec{
+	height:750px;
+}
+.even{
+	background:#333;
+}
+.active{
+	background:#abc;
+}

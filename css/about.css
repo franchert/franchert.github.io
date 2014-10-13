@@ -1,0 +1,155 @@
+html{
+background:url(dress/bg2-tr.png) repeat;
+}
+a:visited{
+color:rgb(0,0,238);
+}
+body{
+	background:none;
+	height:126%;
+	width:100%;
+}
+header{
+	display:block;
+	float:left;
+	width:100%;
+}
+header .contact{
+	display:table;
+	margin:0 auto;
+	font-size:14px;
+}
+header .contact li{
+	display: table-cell;
+	padding-left: 10px;
+}
+header .contact li.first{
+}
+.container .wrapper section{
+	width: 100%;
+	margin-top: 10px;
+	border-top: 1px solid #aaa;
+	padding-top: 10px;
+	display:block;
+	float:left;
+}
+.container h2.name{
+	display:block;
+	position:relative;
+	margin:0 auto;
+	font-size:40px;
+	width:390px;
+	margin-bottom:5px;
+	padding: 0;
+	color: rgba(0,0,0,1);
+	font: 30px Arial, sans-serif;
+	position: relative;
+	text-shadow: none;
+}
+.container h2{
+	font-family:Arial, sans-serif;
+	font-size:18px;
+	line-height:20px;
+	font-weight:bold;
+	margin-top:0;
+}
+.container h3{
+	font-size:16px;
+	margin:5px 0;
+	text-decoration:underline;
+}
+.container ul{
+	margin:0;
+}
+.container li{
+	font: 13px/16px arial, sans-serif;
+}
+.container li li{
+	list-style:disc;
+	margin-left:20px;
+	max-width:80%;
+}
+.container{
+	width:900px;
+	box-shadow:0 0 10px #ccc;
+	margin:20px auto;
+	padding:30px;
+	background:#fff;
+	box-sizing:border-box;
+}
+.wrapper{
+
+	width:100%;
+}
+.container .left.top{
+	width:35%;
+}
+.container .right.top{
+	width:55%;
+	text-align:right;
+}
+.container .left{
+	display:block;
+	float:left;
+	margin-left:10px;
+}
+.container .right{
+	display:block;
+	float:right;
+	margin-right:10px;
+	font-weight:bold;
+}
+.left p,
+.container p{
+	color:#000;
+	padding:0;
+	line-height:18px;
+	margin:0;
+}
+
+
+
+
+
+@media (max-width: 960px) {
+
+.container{
+	width:100%;
+}
+.wrapper{}
+.menu a#back {
+	background: url("home.png") no-repeat center #eee;
+}
+header .contact{
+	padding:0;
+}
+
+}
+
+@media (max-width: 550px){
+.container{
+	padding:20px;
+}
+
+
+}
+@media print{
+.container{
+	padding:0;
+	margin:0;
+}
+.section{
+	margin-top:5px;
+	padding-top:5px;
+}
+h2{
+	margin:0;
+}
+.top-bar{
+	display:none;
+}
+a[href]:after {
+  content: none !important;
+}
+
+}
