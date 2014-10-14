@@ -45,34 +45,6 @@
 	</nav>
     <div class="row">
 		<div class="item">
-			<h2>Spartan Race - 3/22/14</h2>
-			<div class="slideshow" data-transition="crossfade" data-loop="true" data-skip="false">
-				<ul class="carousel">
-					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="0.jpg"/></li>
-					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="1.jpg"/></li>
-					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="4.jpg"/></li>
-					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="3.jpg"/></li>
-					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="5.jpg"/></li>
-					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="2.jpg"/></li>
-					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="6.jpg"/></li>
-				</ul>
-			</div>
-			<script>
-				$(function() {
-					// Create slideshow instances
-					var $s = $('.slideshow').slides();
-
-					// Access an instance API
-					var api = $s.eq(0).data('slides');
-
-					// Transition select
-					$('select[name=transition]').on('change', function() {
-						api.redraw( this.value );
-					});
-				});
-			</script>
-		</div>
-		<div class="item">
 			<h2>Blue Ridge Relay - 9/5/14</h2>
 			<div class="slideshow2" data-transition="crossfade" data-loop="true" data-skip="false">
 				<ul class="carousel">
@@ -100,7 +72,36 @@
 						api.redraw( this.value );
 					});
 				});
+			</script>    	
+		<div class="item">
+			<h2>Spartan Race - 3/22/14</h2>
+			<div class="slideshow" data-transition="crossfade" data-loop="true" data-skip="false">
+				<ul class="carousel">
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="0.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="1.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="4.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="3.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="5.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="2.jpg"/></li>
+					<li class="slide" style="left:0px; top:0px; display:list-item"><img src="6.jpg"/></li>
+				</ul>
+			</div>
+			<script>
+				$(function() {
+					// Create slideshow instances
+					var $s = $('.slideshow').slides();
+
+					// Access an instance API
+					var api = $s.eq(0).data('slides');
+
+					// Transition select
+					$('select[name=transition]').on('change', function() {
+						api.redraw( this.value );
+					});
+				});
 			</script>
+		</div>
+
 	</div>
     
     <script>
