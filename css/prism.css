@@ -1,7 +1,0 @@
-body{
-	overflow-x:hidden;
-}
-canvas{
-	position:absolute;
-	z-index:-1;
-}
