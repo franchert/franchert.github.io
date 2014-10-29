@@ -1,29 +1,327 @@
-.nav{
+html{
+	background:#222;
+}
+.sec{
+	min-height:101vh;
+}
+.even{
+	background:#333;
+}
+.odd{
+	background:#666;
+}
+.options{
+	display:block;
+	float:left;
+	position:fixed;
+	top:0;
+	left:calc(50% - 112px);
+	background:#eee;
+}
+.options ul{
+	float:left;
+	display: table;
+}
+.options ul li{
+    width: 28px;
+    height: 30px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 0;
+}
+.options ul li.active{
+	background:#ccc;
+}
+
+#content{
+}
+#nav{
+	position:fixed;
+}
+/*option 1*/
+#nav.o1{
+	right:0;
+	text-indent:-9999px;
+	height:100vh;
+	background:#0B006C;}
+#nav.o1 ul{
+	right:0;
+	position:relative;
+	background:#0B006C;
+	border-bottom:1px solid #0400FF;
+	border-top:1px solid #000;
+	margin-top:50px;;;
+}
+#nav.o1 ul li{
+	border-top:1px solid #0400FF;
+	border-bottom:1px solid #000000;}
+#nav.o1 ul li:first-child{
+}
+#nav.o1 ul li:last-child{
+	border-bottom:1px solid #000;
+}
+#nav.o1 ul li a{
+	display:block;
+	width:20px;
+	background:#0B006C;
+
+	position:relative;
+	height:16px;
+}
+#nav.o1 .active{
+	width:0px;
+	right:8px;}
+#nav.o1 ul li a.active{
+	background:none;
+}
+#nav.o1 ul li a.active:before{
+	content:'';
+	border-left:8px solid transparent;
+	border-right:0;
+	border-top:8px solid #0B006C;
+	border-bottom:0;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+#nav.o1 ul li a.active:after{
+	content:'';
+	border-left:8px solid transparent;
+	border-right:0;
+	border-top:0;
+	border-bottom:8px solid #0B006C;
+	left:0;
+	position:absolute;
+	top:0;
+}
+/*end option 1*/
+/*option 2*/
+#nav.o2{
+	position: fixed;
+	top:50px;
+	right:0;
+}
+#nav.o2 ul{
+	padding: 3px;
+	border-radius: 12px 0 0 12px;
+	background: #84a136;
+	box-shadow: 0 0 3px rgba(0,0,0,0.4);
+	border: 1px solid rgba(88, 121, 0, 0.4);
+	border-right: 0;
+}
+#nav.o2 ul li{
+}
+#nav.o2 ul li a{
+	border-radius: 9px;
+	width: 16px;
+	height: 16px;
+	background: rgba(7, 16, 10, 0.68);
+	display: block;
+	margin:5px 3px;
+	color:#eee;
+	text-decoration:none;
+	box-shadow:inset 0 0 5px rgba(0,0,0,0.5);
+	border:1px solid transparent;
+	text-indent:-9999px;
+}
+#nav.o2 .active{
+	background: #297C46;
+	line-height: 18px;
+	font-size: 14px;
+	text-align: center;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.4),-1px -1px 6px rgba(41,124,70,0.6);
+	border: 1px solid rgba(0,0,0,0.2);
+	text-indent: 0;
+}
+/*end option 2*/
+
+/*option 3*/
+#nav.o3{
+	right:0;
+	text-align:right;}
+#nav.o3 ul{
+	margin-top:40px;}
+#nav.o3 ul li{
+    display: table;
+    margin: 4px 0;
+    position: relative;
+    right: -100px;
+}
+#nav.o3 ul li a{
+    height: 40px;    
+    position: relative;
+    background: rgba(246, 249, 167, 1);
+    border-radius: 5px 0 0 5px;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100px;
+    max-width: 100px;
+    padding-left: 15px;
+    box-shadow: 3px 1px 5px rgba(0,0,0,0.5);
+    color: #444;
+    text-decoration: none;
+    right: 0;
+}
+#nav.o3 ul li a:hover{
+	right:10px;
+}
+#nav.o3 ul li a.active:hover{
+	right:100px;
+	padding-left:15px;
+}
+#nav.o3 .active{
+    right: 100px;
+}
+#nav.o3 ul li:nth-child(1) a{
+	border-left:5px solid rgb(168, 15, 15);
+}
+#nav.o3 ul li:nth-child(1) a:before{
+	content:"\f004";
+	font-family:FontAwesome;
+	color:rgb(168, 15, 15);
+	position:relative;
+	left:-10px;
+}
+#nav.o3 ul li:nth-child(2) a{
+	border-left:5px solid rgb(29, 29, 29);}
+#nav.o3 ul li:nth-child(2) a:before{
+	content:"\f113";
+	font-family:FontAwesome;
+	color:rgb(29, 29, 29);
+	position:relative;
+	left:-10px;
+}
+#nav.o3 ul li:nth-child(3) a{
+	border-left:5px solid rgb(137, 137, 15);}
+#nav.o3 ul li:nth-child(3) a:before{
+	content:"\f091";
+	font-family:FontAwesome;
+	color:rgb(137, 137, 15);
+	position:relative;
+	left:-10px;
+}
+#nav.o3 ul li:nth-child(4) a{
+	border-left:5px solid rgb(9, 155, 9);}
+#nav.o3 ul li:nth-child(4) a:before{
+	content:"\f17b";
+	font-family:FontAwesome;
+	color:rgb(9, 155, 9);
+	position:relative;
+	left:-10px;
+}
+#nav.o3 ul li:nth-child(5) a{
+	border-left:5px solid rgb(187, 124, 7);}
+#nav.o3 ul li:nth-child(5) a:before{
+	content:"\f09e";
+	font-family:FontAwesome;
+	color:rgb(187, 124, 7);
+	position:relative;
+	left:-10px;
+}
+#nav.o3 ul li:nth-child(6) a{
+	border-left:5px solid rgb(17, 17, 207);}
+#nav.o3 ul li:nth-child(6) a:before{
+	content:"\f1a9";
+	font-family:FontAwesome;
+	color:rgb(17, 17, 207);
+	position:relative;
+	left:-10px;
+}
+#nav.o3 ul li:nth-child(7) a{
+	border-left:5px solid #868686;}
+#nav.o3 ul li:nth-child(7) a:before{
+	content:"\f0ad";
+	font-family:FontAwesome;
+	color:#868686;
+	position:relative;
+	left:-10px;
+}
+#nav.o3 ul li:nth-child(8) a{
+	border-left:5px solid rgb(112, 1, 200);}
+#nav.o3 ul li:nth-child(8) a:before{
+	content:"\f145";
+	font-family:FontAwesome;
+	color:rgb(112, 1, 200);
+	position:relative;
+	left:-10px;
+}
+#nav.o3 ul li:nth-child(9) a{
+	border-left:5px solid rgb(120, 221, 221);}
+#nav.o3 ul li:nth-child(9) a:before{
+	content:"\f043";
+	font-family:FontAwesome;
+	color:rgb(120, 221, 221);
+	position:relative;
+	left:-10px;
+}
+#nav.o3 ul li:nth-child(10) a{
+	border-left:5px solid rgb(239, 77, 244);}
+#nav.o3 ul li:nth-child(10) a:before{
+	content:"\f135";
+	font-family:FontAwesome;
+	color:rgb(239, 77, 244);
+	position:relative;
+	left:-10px;
+}
+/*end option 3*/
+/*option 4*/
+#nav.o4{
 	display:block;
 	position:fixed;
 	right:0;
 	height:100vh;
 	width:50px;
-	background:#ccc;
+	background:#9D9D9D;
 	border-left:1px solid #fff;
 }	
-.nav ul li a{
-	display:block;
-	float:right;
+#nav.o4 ul li{
+	display:table;
+	width:100%;
+}
+#nav.o4 ul li a{
+	display:table-cell;
+	vertical-align:middle;
 	height:50px;
 	width:100%;
 	border-bottom:1px solid #fff;
 	text-decoration:none;
 	text-align:center;
 	color:#fff;
-	line-height:50px;
+	padding:10px;
 }
-.sec{
-	height:750px;
-}
-.even{
-	background:#333;
-}
-.active{
+#nav.o4 .active{
 	background:#abc;
+	text-shadow:0 0 5px rgba(0,0,0,0.4);;
 }
+/*end option 4*/
+/*option 5*/
+#nav.o5{
+	display:block;
+	right:0;
+	background:rgba(0,0,0,0.2);}
+#nav.o5 ul{
+	height:100vh;}
+#nav.o5 ul li{
+	text-indent:-9999px;}
+#nav.o5 ul li a{
+	display:block;
+	height:42px;
+	width:42px;
+	margin:10px;
+	border-radius:21px;
+	border:1px solid rgba(255,255,255,0.1);
+	box-shadow:0 0 5px rgba(0,0,0,0.2);
+	background:rgba(255,255,255,0.1);
+}
+#nav.o5 .active{
+	width:44px;
+	height:44px;
+	border:none;
+	background:url('glass.png') rgba(88, 34, 168, 0.58);
+	background-size:cover;
+}
+/*end option 5*/

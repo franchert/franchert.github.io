@@ -1,0 +1,79 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="waypoints.min.js"></script>
+<link rel="stylesheet" type="text/css" href="font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="reset.css"/>
+</head>
+<body>
+	<div id="nav" class="o1">
+		<ul>
+			<li class="a1"><a href="#a1" class="active">First</a></li>
+			<li class="a2"><a href="#a2">2</a></li>
+			<li class="a3"><a href="#a3">3</a></li>
+			<li class="a4"><a href="#a4">4</a></li>
+			<li class="a5"><a href="#a5">5</a></li>
+			<li class="a6"><a href="#a6">6</a></li>
+			<li class="a7"><a href="#a7">7</a></li>
+			<li class="a8"><a href="#a8"></a></li>
+			<li class="a9"><a href="#a9">9</a></li>
+			<li class="a10"><a href="#a10">Long Title for this reallysmallspace</a></li>
+		</ul>
+	</div>
+	<div class="options">
+		<ul>
+			<li id="o1" class="active">1</li>
+			<li id="o2">2</li>
+			<li id="o3">3</li>
+			<li id="o4">4</li>
+			<li id="o5">5</li>
+		</ul>
+	</div>
+	<div id="content">
+		<ul>
+			<li id="a1" class="sec odd ">
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+			<li id="a2" class="sec even">
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+			<li id="a3" class="sec odd">
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+			<li id="a4" class="sec even">
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+			<li id="a5" class="sec odd">
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+			<li id="a6" class="sec even">
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+			<li id="a7" class="sec odd">
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+			<li id="a8" class="sec even">
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+			<li id="a9" class="sec odd">
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+			<li id="a10" class="sec even">
+				<div class="left"></div>
+				<div class="right"></div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
