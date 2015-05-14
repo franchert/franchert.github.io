@@ -1,4 +1,4 @@
-	var s=0, cx = 0, cy = 0, opac = 0.5, edgepad=15;
+	var s=0, cx = 0, cy = 0, opac = 0.8, edgepad=55;
 $(document).ready(function() {
     var canvas = document.getElementById('canvas');
     context = canvas.getContext('2d');
@@ -6,21 +6,20 @@ $(document).ready(function() {
     resizeCanvas();
 });
     function drawStuff() {
-				//start in the center of the canvas instead of a random location
 				var xB=	cx/2;//rdmRng(edgepad,cx-edgepad);
-				var yB=	cy/2;//rdmRng(edgepad,cy-edgepad);
+				var yB=	cy;//rdmRng(edgepad,cy-edgepad);
 		for(var j = 0; j<13; j++){
-				colx=Math.round(rdmRng(0,255));
-				coly=Math.round(rdmRng(0,255));
-				colz=Math.round(rdmRng(0,255));  
-				a = rdmRng(edgepad,cx-edgepad);
-				b = rdmRng(edgepad,cy-edgepad);
-				c = rdmRng(edgepad,cx-edgepad);
-				d = rdmRng(edgepad,cy-edgepad);
-				e = rdmRng(edgepad,cx-edgepad);
-				f = rdmRng(edgepad,cy-edgepad);		
-			for(var i = 0; i<100; i++){
-				context.lineWidth = 1;
+				colx=Math.round(rdmRng(0,55));
+				coly=Math.round(rdmRng(222,255));
+				colz=Math.round(rdmRng(0,111));  
+				a = rdmRng((cx/2)-edgepad,(cx/2)+edgepad);
+				b = rdmRng((cy/2)-edgepad,(cy/2)+edgepad);
+				c = rdmRng((cx/4)-edgepad,(cx/2)+edgepad);
+				d = rdmRng((cy/2)-edgepad,(cy/4)+edgepad);
+				e = rdmRng((cx/6)-edgepad,(cx/2)+edgepad);
+				f = rdmRng((cy/6)-edgepad,(cy/2)+edgepad);	
+			for(var i = 0; i<4; i++){
+				context.lineWidth = 5;
 				colorstring="rgba("+ colx + "," + coly + "," + colz + "," + opac +")";
 				context.strokeStyle = colorstring;
 				context.beginPath();
@@ -37,7 +36,7 @@ $(document).ready(function() {
 				if (colz > 255){colz=255;}
 				if (colz < 0){colz=0;}
 				//controls the spread of each stroke
-				spread=243;
+				spread=22;
 				//don't move the origin each time
 				//xB += rdmRng(-spread,spread);
 				//yB += rdmRng(-spread,spread);
@@ -45,9 +44,8 @@ $(document).ready(function() {
 				b += rdmRng(-spread,spread);
 				c += rdmRng(-spread,spread);
 				d += rdmRng(-spread,spread);
-				e += rdmRng(-spread,spread);// all finish at same x coord
-				f += rdmRng(-spread,spread);// all finish at same y coord
 			}
+			xB=xB+3;
 		}
 		context.beginPath();
 		context.rect(0,0,cx,cy);
