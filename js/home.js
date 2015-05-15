@@ -6,19 +6,19 @@ $(document).ready(function() {
     resizeCanvas();
 });
     function drawStuff() {
-				var xB=	cx/2;//rdmRng(edgepad,cx-edgepad);
+				var xB=	cx/4;//rdmRng(edgepad,cx-edgepad);
 				var yB=	cy;//rdmRng(edgepad,cy-edgepad);
-		for(var j = 0; j<13; j++){
+		for(var j = 0; j<20; j++){
 				colx=Math.round(rdmRng(0,55));
 				coly=Math.round(rdmRng(222,255));
 				colz=Math.round(rdmRng(0,111));  
 				a = rdmRng((cx/2)-edgepad,(cx/2)+edgepad);
 				b = rdmRng((cy/2)-edgepad,(cy/2)+edgepad);
 				c = rdmRng((cx/4)-edgepad,(cx/2)+edgepad);
-				d = rdmRng((cy/2)-edgepad,(cy/4)+edgepad);
-				e = rdmRng((cx/6)-edgepad,(cx/2)+edgepad);
+				d = rdmRng((cy/4)-edgepad,(cy/2)+edgepad);
+				e = rdmRng((cx/15)-edgepad,(cx/1.1)+edgepad);
 				f = rdmRng((cy/6)-edgepad,(cy/2)+edgepad);	
-			for(var i = 0; i<4; i++){
+			for(var i = 0; i<6; i++){
 				context.lineWidth = 5;
 				colorstring="rgba("+ colx + "," + coly + "," + colz + "," + opac +")";
 				context.strokeStyle = colorstring;
@@ -36,7 +36,7 @@ $(document).ready(function() {
 				if (colz > 255){colz=255;}
 				if (colz < 0){colz=0;}
 				//controls the spread of each stroke
-				spread=22;
+				spread=24;
 				//don't move the origin each time
 				//xB += rdmRng(-spread,spread);
 				//yB += rdmRng(-spread,spread);
