@@ -107,7 +107,6 @@ header .contact{
 }
 header .contact li{
 	display: table-cell;
-	padding-left: 10px;
 }
 .cf:after,
 .cf:before{
@@ -153,9 +152,6 @@ header .contact li{
 .container ul{
 	margin:0;
 }
-.container li{
-	font: 13px/16px arial, sans-serif;
-}
 .container li li{
 	list-style:disc;
 	margin-left:20px;
@@ -198,13 +194,25 @@ header .contact li{
 	line-height:18px;
 	margin:0;
 }
+.contact li{
+	display:block;
+	float:left;
+	width:100%;
+}
+.contact li:first-child{
+	padding-left:0;
+}
 
-
-
+@media (min-width: 720px){	
+	.contact li{
+		display:list-item;
+		width:auto;
+		padding-left:10px;
+	}
+}
 
 
 @media (max-width: 960px) {
-
 	.container{
 		width:100%;
 	}
@@ -222,6 +230,11 @@ header .contact li{
 
 }
 @media print{
+	.contact li{
+		display:list-item;
+		width:auto;
+		padding-left:10px;
+	}
 	.container{
 		padding:0;
 		margin:0;
